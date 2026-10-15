@@ -25,7 +25,7 @@ Nguồn: `RULES.md`, `docs/SUBMIT.md`, `README.md`.
 - [x] Tạo `solution/private_report.json` bằng private run chính thức; giữ nguyên kết quả và chữ ký harness tạo.
 - [x] Điền `submission/manifest.json`: `team_or_student` và đúng ba đường dẫn file bài nộp.
 - [x] Chạy selfcheck trên phiên bản cuối trước private run.
-- [ ] Commit và push `solution/`, `submission/` lên git theo hướng dẫn nộp bài; xác nhận commit đã có trên remote.
+- [x] Commit và push `solution/`, `submission/` lên git theo hướng dẫn nộp bài; xác nhận commit đã có trên remote.
 
 Ba file được chấm là `defense.py`, `reflection.md`, `private_report.json`. Manifest là bước thủ tục nộp bài. Practice/public report và checklist này là tài liệu hỗ trợ; public không tính vào điểm. Tài liệu hiện có không đặt điểm đạt tối thiểu, không yêu cầu TPR tuyệt đối hoặc cost_overage bằng 0 như điều kiện đạt.
 
@@ -170,7 +170,7 @@ README mô tả private chỉ trả final score; implementation hiện tại cò
 - [x] `team_or_student` chứa định danh chính xác theo lớp; ba đường dẫn manifest trỏ đúng file tồn tại.
 - [x] Kiểm tra `git status --short` và `git diff`: các thay đổi bài làm chỉ nằm trong `solution/`, `submission/`; không có key, schedule giải mã hay sửa harness.
 - [x] Kiểm tra đúng ba file được chấm đã sẵn sàng và private report là bản tương ứng với defense cuối.
-- [ ] Commit/push theo `docs/SUBMIT.md` và xác nhận thành công trên remote.
+- [x] Commit/push theo `docs/SUBMIT.md` và xác nhận thành công trên remote.
 
 ```powershell
 git status --short
@@ -196,7 +196,7 @@ Trạng thái commit/push được cập nhật theo bằng chứng git ở mụ
 | Manifest | Đã điền DamQuangSon_2A202602868 và kiểm tra ba đường dẫn | `submission/manifest.json` |
 | Release private | Đã có bằng chứng phát hành trong git | Commit `29ad49d` — `Release private phase` |
 | Hồ sơ xác minh | Counts, báo cáo, SHA-256 defense/report và giới hạn | `solution/validation_summary.json` |
-| Commit/push | Đang thực hiện; chưa xác nhận remote | Cập nhật sau khi push |
+| Commit/push | Đã push `main`; remote xác nhận đúng commit bài nộp | `f87a269597ad1ed3631d45b8b94f07896bd8f4bd`; `git ls-remote origin refs/heads/main` trùng `git rev-parse HEAD` sau push |
 
 Private đã chạy hai lần: lần đầu 26,85; sau khi sửa missing-upstream dựa trên hai FN **practice**, lần cuối 31,48. Báo cáo lần đầu được giữ nguyên tại `solution/private_initial_report.json` để truy vết, không phải file chấm điểm trong manifest. Chữ ký các report do harness chuẩn tạo; chỉ kiểm tra cấu trúc, không đọc key để xác minh HMAC độc lập. Một lượt debug practice chỉ chuyển stderr của child ra console, không thay đổi scoring hoặc dữ liệu; debug đã được gỡ khỏi defense cuối.
 
