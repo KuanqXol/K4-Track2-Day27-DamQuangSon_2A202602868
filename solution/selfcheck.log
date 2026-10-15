@@ -1,0 +1,2 @@
+OK: register(ctx) ran cleanly, 5/5 event types have a handler.
+Run a real phase with: python3 harness/run.py --phase practice --defense solution/defense.py --out solution/practice_report.json

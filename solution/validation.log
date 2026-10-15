@@ -1,0 +1,19 @@
+test_cache_reuses_same_ref_but_not_other_event_or_run (test_defense.DefenseTests.test_cache_reuses_same_ref_but_not_other_event_or_run) ... ok
+test_clean_batch_and_exact_calibrated_boundaries (test_defense.DefenseTests.test_clean_batch_and_exact_calibrated_boundaries) ... ok
+test_contract_schema_type_and_sla (test_defense.DefenseTests.test_contract_schema_type_and_sla) ... ok
+test_declared_source_and_sink_can_be_clean (test_defense.DefenseTests.test_declared_source_and_sink_can_be_clean) ... ok
+test_each_batch_fault_independently (test_defense.DefenseTests.test_each_batch_fault_independently) ... ok
+test_embedding_shift_and_age_independently (test_defense.DefenseTests.test_embedding_shift_and_age_independently) ... ok
+test_failed_rpc_can_retry_without_poisoned_cache (test_defense.DefenseTests.test_failed_rpc_can_retry_without_poisoned_cache) ... ok
+test_feature_skew_boundary (test_defense.DefenseTests.test_feature_skew_boundary) ... ok
+test_lineage_all_declared_inputs_and_extra_edge (test_defense.DefenseTests.test_lineage_all_declared_inputs_and_extra_edge) ... ok
+test_lineage_learns_partial_declaration_without_cross_job_leak (test_defense.DefenseTests.test_lineage_learns_partial_declaration_without_cross_job_leak) ... ok
+test_lineage_missing_declared_input_with_other_upstream_present (test_defense.DefenseTests.test_lineage_missing_declared_input_with_other_upstream_present) ... ok
+test_lineage_runtime_and_orphan_output (test_defense.DefenseTests.test_lineage_runtime_and_orphan_output) ... ok
+test_registration_and_dispatch (test_defense.DefenseTests.test_registration_and_dispatch) ... ok
+test_tool_errors_across_all_handlers (test_defense.DefenseTests.test_tool_errors_across_all_handlers) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.003s
+
+OK
